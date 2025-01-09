@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.quizcontainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    padding-left: 60px;
+}
+.quizcontainer .course-heading
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    padding: 20px;
+    width:700px;
+}
+.quizcontainer .course-heading .topic p
+{
+    color: black;
+    font-size:30px;
+    font-weight:530;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.quizcontainer .course-heading #Reviews
+{
+    color: rgb(17, 138, 138);
+}
+.ad
+{
+    width:60%;
+    
+}
+.ad #adp{
+    padding-left: 10px;
+}
+.green
+{
+   background-color: #34b16c7a;
+
+}
+.red
+{
+   background-color: #ac61617a;
+
+}
+
+.quizcontainer .assignment-details
+{
+    height: 180px;
+    width:700px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    background-color: #1ec4a813;
+}
+.quizcontainer .assignment-details .time
+ {
+    display: flex;
+    flex-direction:row;
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.897);
+ }
+ .quizcontainer .assignment-details .time .due p
+ {
+    font-weight: bold;
+ }
+ .quizcontainer .assignment-details .time .due
+ {
+    font-size:13px ;
+ }
+
+ .quizcontainer .assignment-details .time .submitted p
+ {
+    font-weight: bold;
+ }
+ .quizcontainer .assignment-details .time .submitted
+ {
+    font-size:13px ;
+ }
+
+ .quizcontainer .assignment-details .attempts
+ {
+    color: rgba(128, 128, 128, 0.897);
+    font-size:13px ;
+    padding-left: 10px;
+
+
+ }
+ .quizcontainer .assignment-details .attempts #attempt
+ {
+    font-weight: bold;
+    font-size: 14px;
+ }
+
+ .quizcontainer .assignment-details .button
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .quizcontainer .assignment-details .button button
+ {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: #0b5ab4;
+    border: none;
+
+ }
+
+
+
+
+ .quizcontainer .grade
+ {
+    height:100px;
+    width:700px;
+    text-transform: capitalize;
+    border: 1px solid;
+    padding: 20px;
+    border-color: rgb(211, 211, 211);
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+
+ }
+ .quizcontainer .grade #grade
+ {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+
+    
+ }
+ .hide
+ {
+   display: none;
+ }
+
+
+ /* responsive design */
+@media (max-width:768px)
+{
+   .quizcontainer
+   {
+      width: 90%;
+      padding: 10px;
+   }
+   .quizcontainer .course-heading
+   {
+      width: 100%;
+   }
+   .quizcontainer .assignment-details
+   {
+      width: 100%;
+      
+   }
+   .quizcontainer .grade
+   {
+      width: 100%;
+   }
+
+
+}
+@media (max-width:450px)
+{
+   .quizcontainer
+   {
+      padding: 10px;
+   }
+   .quizcontainer .course-heading .topic p
+   {
+      font-size:20px;
+   }
+   .quizcontainer .course-heading #Reviews
+   {
+      font-size: 17px;
+   }
+   .quizcontainer .assignment-details
+   {
+      height: 170px;
+
+   }
+   .quizcontainer .assignment-details .time
+   {
+      gap: 10px;
+   }
+
+   .quizcontainer .assignment-details .time .due
+   {
+      font-size:12px;
+   }
+   .quizcontainer .assignment-details .time .submitted
+   {
+      font-size: 12px;
+   }
+   .quizcontainer .assignment-details .attempts
+   {
+      font-size: 12px;
+   }
+   .quizcontainer .assignment-details .attempts #attempt
+   {
+      font-size: 12px;
+   }
+   .quizcontainer .assignment-details .button button
+   {
+      height:30px;
+   }
+
+}
+
+@media (max-width:400px)
+{
+   .quizcontainer
+   {
+      padding: 10px;
+   }
+   .quizcontainer .assignment-details .button button
+   {
+      width:50px;
+      margin-left: 40px;
+   }
+
+}
+@media(max-width:350px)
+{
+   .quizcontainer .assignment-details .button button
+   {
+      position:relative;
+      left:16px;
+      top:20px;
+      font-size: 11px;
+      width:40px;
+      height:25px;
+      padding: 1px;
+   }
+
+}
+
+
