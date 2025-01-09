@@ -241,22 +241,11 @@ body{
    .quizcontainer .assignment-details .button button
    {
       width:50px;
-      margin-left: 40px;
+      position: relative;
+      top:50px;
    }
 
 }
-@media(max-width:370px)
-{
-   .quizcontainer .assignment-details .button button
-   {
-      position:relative;
-      left:16px;
-      top:20px;
-      font-size: 11px;
-      width:40px;
-      height:25px;
-      padding: 1px;
-   }
 
 }
 
