@@ -241,6 +241,7 @@ body{
    .quizcontainer .assignment-details .button button
    {
       width:50px
+       margin-left:10px;
    }
 
 }
