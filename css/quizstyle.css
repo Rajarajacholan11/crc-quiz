@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.real-quiz-container
+{
+    margin: 20px;
+}
+.real-quiz-container .header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.real-quiz-container .header .back
+{
+    display: flex;
+    gap:10px;
+}
+.real-quiz-container .header .back a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.real-quiz-container .header .back .detail p
+{
+font-weight: bold;
+}
+.real-quiz-container .header .back .detail ul
+{
+    
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.real-quiz-container .header .back .detail ul li
+{
+    color: rgba(128, 128, 128, 0.897);
+    font-size: 13px;
+
+}
+.real-quiz-container .header .due
+{
+font-size: 12px;
+display: flex;
+gap: 10px;
+}
+
+.real-quiz-container .header .due #due
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.real-quiz-questions{
+    padding-left: 30px;
+    
+}
+
+.real-quiz-questions .question
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+
+.real-quiz-questions .question #p
+{
+    padding-top: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size: 15px;
+}
+ 
+.real-quiz-questions .question label
+{
+    padding-top: 15px;
+    padding-bottom:15px;
+    display: flex;
+    gap: 10px;
+}
+.real-quiz-questions .question label p
+{
+    
+    padding: 0;
+    font-size: 14px;
+}
+
+
+.feedback .correct
+{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    background-color: #34b16c7a;
+    padding: 5px;
+}
+.feedback .correct .crt
+{
+    display: flex;
+    gap: 10px;
+    color: rgb(13, 71, 54);
+}
+.feedback .correct .crt p
+{
+    font-size: 14px;
+}
+ #explain
+{
+    padding-left: 10px;
+}
+.feedback .incorrect
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #ac61617a;
+    height: 60px;
+    padding: 5px;
+}
+.feedback .incorrect .incrt
+{
+    display: flex;
+    gap: 10px;
+    color: rgb(122, 2, 2);
+}
+.feedback .incorrect .incrt p
+{
+    font-size: 14px;
+}
+
+
+.submission
+{
+    display: flex;
+    flex-direction: column;
+}
+.submission .txt
+{
+    display: flex;
+    gap:10px;
+    padding-top: 10px;
+}
+.submission .txt span
+{
+    color: rgb(7, 7, 219);
+}
+.submission .txt p
+{
+    color: rgb(6, 66, 100);
+    
+}
+#lg
+{
+    padding-left: 20px;
+}
+.submission button
+{
+    width:80px;
+    height: 30px;
+    margin-top:10px;
+    color: white;
+    background-color: #060d6e;
+    border: none;
+    margin-bottom: 10px;
+}
+.list ul
+{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    padding-left: 20px;
+}
+.list ul li
+{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: rgb(25, 105, 105);
+}
+
+.list ul li i{
+    padding-right: 4px;
+}
+
+
+.hide
+{
+display:none !important;
+}
+.block
+{
+ display: block;
+}
+.result
+{
+background-color: #ac61617a;
+height: 70px;
+padding: 5px;
+}
+
+.result ul
+{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10px;
+}
+.pass
+{
+    background-color:  #34b16c7a !important;
+}
+
+
+
+/* responsive design */
+@media (max-width:450px)
+{
+    .real-quiz-container
+    {
+        width:100%;
+        border: 1px solid;
+        margin:0;
+    }
+    .real-quiz-container .header .back #arro
+    {
+        font-size: 12px;
+    }
+    .real-quiz-container .header .back .detail p
+    {
+        font-size: 12px;
+    }
+    .real-quiz-container .header .due
+    {
+        font-size: 11px;
+    }
+    .real-quiz-container .header .due #due
+    {
+        font-size:11px;
+    }
+    .real-quiz-questions
+    {
+        padding-left: 15px;
+    }
+    .real-quiz-questions .question #p
+    {
+        font-size:13px;
+    }
+    .real-quiz-questions .question label
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap:5;
+    }
+    .real-quiz-questions .question label p
+    {
+        font-size: 13px;
+    }
+    .submission .txt
+    {
+        gap:5px;
+        padding-top: 5px;
+    }
+    .submission .txt p
+    {
+        font-size:13px;
+    }
+    #lg
+    {
+        font-size: 13px;
+    }
+    #butt
+    {
+        height: 20px;
+        width:70px;
+    }
+    .list ul li
+    {
+        font-size:13px;
+        padding-bottom: 10px;
+    }
+    .feedback .correct
+    {
+        height: 50px;
+        margin-right:10px;
+    }
+    .feedback .correct .crt i
+    {
+        font-size: 12px;
+    }
+    #explain
+    {
+        font-size: 10px;
+    }
+    .feedback .incorrect
+    {
+        height: 50px;
+        margin-right:10px;
+    }
+    .feedback .incorrect .incrt i
+    {
+        font-size: 12px;
+
+    }
+    .result
+    {
+        height: 70px;
+    }
+    .result h2
+    {
+        font-size:14px;
+    }
+    #highscore
+    {
+        font-size: 12px;
+    }
+    #pass_or_not
+    {
+        font-size: 12px;
+
+    }
+
+
+
+
+
+}
