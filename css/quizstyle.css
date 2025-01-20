@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display:flex;
+    justify-content: centre;
+}
 .real-quiz-container
 {
     margin: 20px;
+    width:95%;
+    border:1px solid;
 }
 .real-quiz-container .header
 {
